@@ -1,5 +1,5 @@
 const axios = require('axios')
-const localBase = 'localhost:3000'
+const localBase = 'http://localhost:3000'
 const APIbase = 'https://api.discover.com/dci/currencyconversion/v1/exchangerates'
 
 function getToken() {
@@ -12,7 +12,7 @@ function attachHeaders(token) {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
         'X-DFS-API-PLAN': 'DCI_CURRENCYCONVERSION_SANDBOX',
-        'Authorization': token,
+        'Authorization': `Bearer ${token}`,
         'Allow-Control-Allow-Origin': '*'
       }
     }
@@ -21,7 +21,7 @@ function attachHeaders(token) {
 
 getToken()
 .then( (response) => {
-  const token = response.access_token
+  const token = response['access_token']
   return attachHeaders(token)
 })
 
@@ -29,8 +29,8 @@ getToken()
 function getExchangeRates() {
   return getToken()
   .then( (response) => {
-    const token = response.access_token
-    return axios.get(APIbase, {}, attachHeaders(token))
+    const token = response.data.access_token
+    return axios.get(APIbase, attachHeaders(token))
   })
 
 }
