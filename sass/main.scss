@@ -45,6 +45,32 @@ header {
   }
 }
 
+.collection {
+
+  .collection-item {
+    padding: 0;
+
+    .image {
+      padding: 0;
+      margin-bottom: -5px;
+    }
+
+    img {
+      max-width: auto;
+      padding: 0;
+      width: 100%;
+    }
+
+    .details {
+      padding-bottom: 2rem;
+
+      @media #{$large-and-up} {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
 .card {
 
   .ratings {
@@ -78,4 +104,8 @@ header {
       margin-right: 1rem;
     }
   }
+}
+
+footer {
+  margin-top: 2rem;
 }
