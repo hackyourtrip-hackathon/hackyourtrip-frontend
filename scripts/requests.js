@@ -1,7 +1,7 @@
 const axios = require('axios')
 const localBase = 'http://localhost:3000'
 const exchangeRates = 'https://api.discover.com/dci/currencyconversion/v1/exchangerates'
-const cityGuides = 'https://api.discover.com/cityguides/v2/merchants'
+const cityGuides = 'https://api.discover.com/cityguides/v2/cities'
 
 function getToken() {
   return axios.get(`${localBase}/token`)
@@ -39,7 +39,6 @@ function getCities() {
   return getToken()
   .then ( response => {
     const token = response.data.access_token
-    console.log(token)
     return axios.get(cityGuides, attachHeaders('CITYGUIDES_SANDBOX', token))
   })
 }
