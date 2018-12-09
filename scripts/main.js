@@ -7,9 +7,9 @@ const path = window.location.pathname
 
 const initialize = {
   '/': require('./cities').init,
-  // '/guide.html': require('./guide').init,
   '/guides.html': require('./guides').init,
-
+  '/guide.html': require('./guide').init,
+ 
 }
 
 if (initialize.hasOwnProperty(path)) initialize[path]()

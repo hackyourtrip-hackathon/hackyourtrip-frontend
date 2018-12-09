@@ -5,7 +5,7 @@ const header = () => {
     <nav class="blue-grey">
       <div class="nav-wrapper container">
         <a href="/" class="brand-logo">
-          Headline
+          Discover Local
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
@@ -48,15 +48,15 @@ const guide = ( image, rating, language, cost, name ) => {
     </div>`
 }
 
-const renderCity = (city_image, name, description) => {
-  return `<div class="city col s12 m4">
+const renderCities = (city_image, name, description) => {
+  return `<div class="city col s12 m4 data-name=${ name }">
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src=${city_image}>
         <h2 class="card-title city">${ name }</h2>
       </div>
       <div class="card-content">
-        <p><a href="#">Explore this City</a></p>
+        <p><a href="./guides.html?name=${ name }">Explore this City</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">${ name }<i class="material-icons right">close</i></span>
@@ -66,4 +66,14 @@ const renderCity = (city_image, name, description) => {
   </div>`
 }
 
-module.exports = { header, guide, renderCity }
+const renderCity = (city_image, name, description) => {
+  return `<div class="image col s12">
+    <img src=${ city_image } alt="image">
+  </div>
+  <div class="description col s12">
+    <h4>${ name } </h4>
+    <p>${ description }</p>
+  </div>`
+}
+
+module.exports = { header, guide, renderCities, renderCity }

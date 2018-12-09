@@ -6574,7 +6574,8 @@ header .tiny.material-icons {
 .card .card-title:not(.city) {
   font-size: 1.2rem;
   line-height: 3rem;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  color: black; }
 
 .card .card-image {
   overflow: hidden; }
@@ -6592,3 +6593,10 @@ header .tiny.material-icons {
 
 footer {
   margin-top: 2rem; }
+
+.city .image img {
+  width: 100%; }
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    font-size: 1.6rem; } }

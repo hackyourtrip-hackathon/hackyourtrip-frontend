@@ -94,6 +94,7 @@ header {
       font-size: 1.2rem;
       line-height: 3rem;
       padding: 0 1rem;
+      color: black;
     }
   }
 
@@ -120,4 +121,21 @@ header {
 
 footer {
   margin-top: 2rem;
+}
+
+.city {
+
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+nav {
+  .brand-logo {
+    @media #{$medium-and-down} {
+      font-size: 1.6rem;
+    }
+  }
 }
