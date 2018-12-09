@@ -1,5 +1,5 @@
 const { getExchangeRates, getCities } = require('./requests')
-const { renderCity } = require('./template')
+const { renderCities } = require('./template')
 
 function init() {
 
@@ -10,12 +10,10 @@ function init() {
 
       const citiesHTMLArray = cities.map(city => {
         // console.log(city._id.city, city._id.description, city._id.images.DCI.city_image)
-        return renderCity(city._id.images.DCI.city_image, city._id.city, city._id.description)
+        return renderCities(city._id.images.DCI.city_image, city._id.city, city._id.description)
       })
 
       const citiesHTML = citiesHTMLArray.join('')
-
-      console.log(citiesHTMLArray)
 
       document.querySelector('.cities').innerHTML = citiesHTML
     })
