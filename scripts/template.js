@@ -49,35 +49,14 @@ const guide = ( image, rating, language, cost, name ) => {
 }
 
 const renderCity = (city_image, name, description) => {
-  // return `
-  //   <div class="city col s12 m4">
-  //   <div class="card hoverable">
-  //     <div class="card-image">
-  //       <img src="${ city_image }">
-  //       <h2 class="card-title city">${ name }</h2>
-  //     </div>
-  //     <div class="card-content">
-  //     </div>
-  //     <div class="card-reveal">
-  //       <span class="card-title grey-text text-darken-4">${ name }<i class="material-icons right">close</i></span>
-  //       <p>${ description } </p>
-  //       <div class="card-action">
-  //         <a href="#">This is a link</a>
-  //       </div>
-  //     </div>
-
-  //   </div>
-  // </div>
-  // `
   return `<div class="city col s12 m4">
-
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src=${city_image}>
         <h2 class="card-title city">${ name }</h2>
       </div>
       <div class="card-content">
-        <p><a href="#">This is a link</a></p>
+        <p><a href="#">Explore this City</a></p>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">${ name }<i class="material-icons right">close</i></span>
