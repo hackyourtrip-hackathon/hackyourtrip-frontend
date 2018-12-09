@@ -8,7 +8,7 @@ const path = window.location.pathname
 const initialize = {
   '/': require('./cities').init,
   '/guides.html': require('./guides').init,
-  // '/guide.html': require('./guide').init,
+  '/guide.html': require('./guide').init,
  
 }
 

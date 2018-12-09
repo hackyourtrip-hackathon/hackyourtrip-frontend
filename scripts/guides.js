@@ -23,17 +23,17 @@ function init() {
   })
 }
 
-const cost = Array.from(document.querySelectorAll('.card-title.price'))
-console.log(cost)
+// const cost = Array.from(document.querySelectorAll('.card-title.price'))
+// console.log(cost)
 
-getExchangeRates()
-  .then(response => {
-    let rate = response.data.currencies[89].exchange_rate
-    let hourly = cost.map(c => {
-      return parseInt(c.innerText) / rate
-    })
-    console.log(hourly)
-  })
+// getExchangeRates()
+//   .then(response => {
+//     let rate = response.data.currencies[89].exchange_rate
+//     let hourly = cost.map(c => {
+//       return parseInt(c.innerText) / rate
+//     })
+//     console.log(hourly)
+//   })
 
   // rate * parseInt(c.innerText)
 
