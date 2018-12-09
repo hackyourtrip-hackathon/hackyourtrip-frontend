@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script defer src="bundle.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- insert header -->
+  </header>
+
+  <div class="city white row">
+
+    <section class="container row">
+     <i class="material-icons col">calendar</i>
+    </section>
+
+    <section class="tour-guides container">
+      <h3 class="center-align">${ city_guides }</h3>
+
+      <div class="cards row">
+
+        <div class="item col s6 m6 l4">
+          <a href="./?=${ id }">
+            <div class="card hoverable">
+              <div class="ratings">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <div> Speaks Japanese and English </div>
+              </div>
+
+              <div class="card-image">
+                <img src="https://via.placeholder.com/100" alt="image">
+                <p class="card-title price"> 0.00 / tour </p>
+              </div>
+
+              <div class="meta row">
+                <span class="card-title col">${ name }</span>
+
+                <span class="specialties col right">
+                  <i class="material-icons">directions_walk</i>
+                  <i class="material-icons">local_bar</i>
+                  <i class="material-icons">local_dining</i>
+                  <i class="material-icons">photo_camera</i>
+                </span>
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  <footer class="blue-grey darken-4 page-footer">
+    <!-- insert footer -->
+    <div class="container footer-copyright">
+      <p>
+        <strong>&copy; 2018 Discover Network</strong>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

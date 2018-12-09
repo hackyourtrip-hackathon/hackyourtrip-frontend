@@ -1,109 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script defer src="bundle.js" charset="utf-8"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
-</head>
-<body class="scroller">
-  <header>
-    <!-- insert header -->
-    <nav class="indigo">
-      <div class="nav-wrapper container">
-        <a href="/" class="brand-logo">
-          Headline
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-            <a href="#">
-              <i class="tiny material-icons">favorite</i> Ratings
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="tiny material-icons">add</i> Add New
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
-  <div class="city white row">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="bundle.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+  </head>
 
-    <!-- <section class="city-details container row">
-      <div class="image col m12 l4">
-        <img src="https://via.placeholder.com/350" alt="">
-      </div>
+  <body>
+    <header>
+      <!-- insert header -->
+    </header>
 
-      <div class="image col m12 l8">
-        <h2>City Name</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Labore ea cupiditate possimus optio ducimus magni repudiandae!
-          Iste cumque, voluptas explicabo accusantium alias dolorem illo
-          molestiae tempora doloremque aut magnam dignissimos.
-        </p>
-      </div>
-    </section> -->
-
-    <section class="tour-guides container">
-      <h3>City</h3>
-
-      <div class="cards row">
-
-        <div class="item col s6 m6 l4">
-
-          <div class="card hoverable">
-
-            <div class="ratings">
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <div> Speaks Japanese and English </div>
-            </div>
-
-            <div class="card-image">
-              <img src="https://via.placeholder.com/100" alt="image">
-              <p class="card-title"> 0.00 / tour </p>
-            </div>
-
-            <div class="meta row">
-              <span class="card-title col">Name</span>
-
-              <span class="specialties col right">
-                <i class="material-icons">directions_walk</i>
-                <i class="material-icons">local_bar</i>
-                <i class="material-icons">local_dining</i>
-                <i class="material-icons">photo_camera</i>
-              </span>
-            </div>
-
-          </div>
-
+    <div class="city white row">
+      <!-- insert cities here -->
+      <section class="${ city } city-details container row">
+        <div class="image col m12 l4">
+          <img src="https://via.placeholder.com/350" alt="">
         </div>
 
-      </div>
+        <div class="image col m12 l8">
+          <h2>${ city }</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Labore ea cupiditate possimus optio ducimus magni repudiandae!
+            Iste cumque, voluptas explicabo accusantium alias dolorem illo
+            molestiae tempora doloremque aut magnam dignissimos.
+          </p>
+        </div>
+      </section>
 
-    </section>
-
-  </div>
-  <footer class="indigo darken-4 page-footer">
-    <!-- insert footer -->
-    <div class="container footer-copyright">
-      <p>
-        <strong>&copy; 2018 Discover Network</strong>
-      </p>
     </div>
-  </footer>
+    <footer class="blue-grey darken-4 page-footer">
+      <div class="container footer-copyright">
+        <p>
+          <strong>&copy; 2018 Discover Network</strong>
+        </p>
+      </div>
+    </footer>
 
-</body>
+  </body>
+
 </html>

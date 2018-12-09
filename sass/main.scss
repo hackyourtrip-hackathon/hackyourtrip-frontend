@@ -1,6 +1,35 @@
 @charset "utf-8";
 @import "./materialize.scss";
 
+$darkGrey: (
+  "base": #091F40,
+  "light-3": lighten(#091F40, 30),
+  "light-2": lighten(#091F40, 20),
+  "light-1": lighten(#091F40, 10),
+  "darken-1": darken(#091F40, 10),
+  "darken-2": darken(#091F40, 20),
+  "darken-3": darken(#091F40, 30)
+);
+
+$lightGrey: (
+  "base": #F6F6F6,
+  "darken-1": darken(#F6F6F6, 10),
+  "darken-2": darken(#F6F6F6, 20),
+  "darken-3": darken(#F6F6F6, 30)
+);
+
+body {
+  color: map-get($darkGrey, base );
+}
+
+header {
+
+  .tiny.material-icons {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
 .card {
 
   .ratings {
@@ -17,6 +46,11 @@
     .card-image & {
       margin: 0;
       padding: 0 1rem;
+    }
+
+    &.price {
+      margin: 0;
+      padding: 1rem;
     }
   }
 
