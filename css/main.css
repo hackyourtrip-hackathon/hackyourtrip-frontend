@@ -6594,7 +6594,7 @@ header .tiny.material-icons {
 footer {
   margin-top: 2rem; }
 
-.city .image img {
+.city .image img, .guide-details .image img {
   width: 100%; }
 
 @media only screen and (max-width: 992px) {
