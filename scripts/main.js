@@ -14,10 +14,3 @@ const initialize = {
 
 if (initialize.hasOwnProperty(path)) initialize[path]()
 else console.error(`${path} can't initialize`)
-
-// getExchangeRates()
-// .then( response => {
-//   console.log(response)
-// })
-
-
