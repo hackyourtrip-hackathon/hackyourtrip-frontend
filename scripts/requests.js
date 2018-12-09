@@ -3,7 +3,7 @@ const localBase = 'http://localhost:3000'
 const APIbase = 'https://api.discover.com/dci/currencyconversion/v1/exchangerates'
 
 function getToken() {
-  return axios.get(`${localBase}/data`)
+  return axios.get(`${localBase}/token`)
 }
 function attachHeaders(token) {
   return (
