@@ -1,4 +1,7 @@
 const { getExchangeRates, getCities } = require('./requests')
+const { header } = require('./template')
+const nav = document.querySelector('header')
+nav.innerHTML = header()
 
 getExchangeRates()
 .then( response => {

@@ -5,6 +5,5 @@ package-lock.json
 .vscode
 CNAME
 /sass/components
-/css/main.css
 /scripts/materialize
 favicon.ico

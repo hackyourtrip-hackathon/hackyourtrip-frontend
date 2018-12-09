@@ -1,6 +1,81 @@
 @charset "utf-8";
 @import "./materialize.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
-.test {
-  display: block;
+$darkGrey: (
+  "base": #091F40,
+  "light-3": lighten(#091F40, 30),
+  "light-2": lighten(#091F40, 20),
+  "light-1": lighten(#091F40, 10),
+  "darken-1": darken(#091F40, 10),
+  "darken-2": darken(#091F40, 20),
+  "darken-3": darken(#091F40, 30)
+);
+
+$lightGrey: (
+  "base": #F6F6F6,
+  "darken-1": darken(#F6F6F6, 10),
+  "darken-2": darken(#F6F6F6, 20),
+  "darken-3": darken(#F6F6F6, 30)
+);
+
+h1, h2, h3, h4, h5, h6, {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  p {
+    color: map-get($darkGrey, base);
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+  }
+
+  .city {
+    margin-top: 3rem;
+  }
+}
+
+header {
+  .tiny.material-icons {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.card {
+
+  .ratings {
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .card-title {
+
+    &.city {
+      margin: .5rem;
+      padding: 1rem;
+    }
+
+    &:not(.city) {
+      font-size: 1.2rem;
+      line-height: 3rem;
+      padding: 0 1rem;
+    }
+  }
+
+  .meta {
+    background: transparent;
+
+    span.specialties.col.right {
+      padding: .5rem;
+      margin-right: 1rem;
+    }
+  }
 }

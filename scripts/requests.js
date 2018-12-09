@@ -6,6 +6,7 @@ const cityGuides = 'https://api.discover.com/cityguides/v2/merchants'
 function getToken() {
   return axios.get(`${localBase}/token`)
 }
+
 function attachHeaders(plan, token) {
   return (
     {
@@ -26,7 +27,6 @@ getToken()
   return attachHeaders(token)
 })
 
-
 function getExchangeRates() {
   return getToken()
   .then( (response) => {
@@ -41,8 +41,6 @@ function getCities() {
     const token = response.data.access_token
     console.log(token)
     return axios.get(cityGuides, attachHeaders('CITYGUIDES_SANDBOX', token))
-
-
   })
 }
 
