@@ -6567,6 +6567,7 @@ header .tiny.material-icons {
   padding: 1rem; }
 
 .card .card-title.city {
+  text-shadow: 0px 1px 6px #000000;
   margin: .5rem;
   padding: 1rem; }
 
@@ -6574,6 +6575,14 @@ header .tiny.material-icons {
   font-size: 1.2rem;
   line-height: 3rem;
   padding: 0 1rem; }
+
+.card .card-image {
+  overflow: hidden; }
+  .card .card-image img {
+    height: 300px;
+    width: auto;
+    position: relative;
+    bottom: 0; }
 
 .card .meta {
   background: transparent; }
