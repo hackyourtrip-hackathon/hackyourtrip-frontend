@@ -4,7 +4,7 @@ const exchangeRates = 'https://api.discover.com/dci/currencyconversion/v1/exchan
 const cityGuides = 'https://api.discover.com/cityguides/v2/merchants'
 
 function getToken() {
-  return axios.get(`${localBase}/data`)
+  return axios.get(`${localBase}/token`)
 }
 
 function attachHeaders(plan, token) {
