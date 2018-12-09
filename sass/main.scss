@@ -1,6 +1,31 @@
 @charset "utf-8";
 @import "./materialize.scss";
 
-.test {
-  display: block;
+.card {
+
+  .ratings {
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .card-title {
+    margin-left: 1rem;
+    .card-image & {
+      margin: 0;
+      padding: 0 1rem;
+    }
+  }
+
+  .meta {
+    background: transparent;
+
+    span.specialties.col.right {
+      padding: .5rem;
+      margin-right: 1rem;
+    }
+  }
 }
