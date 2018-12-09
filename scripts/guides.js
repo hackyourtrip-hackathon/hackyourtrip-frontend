@@ -10,8 +10,6 @@ function init() {
   .reduce((acc, ele) => ({ ...acc, [ele[0]]: ele[1] }), {})
 
   let name = queryString.name
-
-  console.log(name)
   
   if(name.includes('%20')) {
     name = name.replace(/%20/g, ' ')
@@ -21,19 +19,23 @@ function init() {
   .then( response => {
     const cities = response.data.result
     const city = cities.find(city => city._id.city === name)
-    console.log(city)
+    // renderCity(city)
   })
 }
 
 const cost = Array.from(document.querySelectorAll('.card-title.price'))
-console.log(cost);
+console.log(cost)
 
 getExchangeRates()
   .then(response => {
     let rate = response.data.currencies[89].exchange_rate
-    let hourly = cost.forEach(c => rate * parseInt(c.innerText))
+    let hourly = cost.map(c => {
+      return parseInt(c.innerText) / rate
+    })
     console.log(hourly)
   })
+
+  // rate * parseInt(c.innerText)
 
 module.exports = { init }
 
