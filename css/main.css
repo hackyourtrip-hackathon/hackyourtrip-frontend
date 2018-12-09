@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6525,14 +6526,24 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; }
+
 body {
-  color: #091F40; }
+  font-family: 'Montserrat', sans-serif; }
+  body p {
+    color: #091F40;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem; }
+  body .city {
+    margin-top: 3rem; }
 
 header .tiny.material-icons {
   display: inline-block;
   vertical-align: bottom; }
 
-.card .ratings {
+.guides .card .ratings {
   text-align: center;
   position: absolute;
   z-index: 1000;
@@ -6540,17 +6551,15 @@ header .tiny.material-icons {
   right: 0;
   padding: 1rem; }
 
-.card .card-title {
-  margin-left: 1rem; }
-  .card-image .card .card-title {
-    margin: 0;
-    padding: 0 1rem; }
-  .card .card-title.price {
+.guides .card .card-image .card-title {
+  margin: 1rem;
+  padding: 0; }
+  .guides .card .card-image .card-title.price {
     margin: 0;
     padding: 1rem; }
 
-.card .meta {
+.guides .card .meta {
   background: transparent; }
-  .card .meta span.specialties.col.right {
+  .guides .card .meta span.specialties.col.right {
     padding: .5rem;
     margin-right: 1rem; }

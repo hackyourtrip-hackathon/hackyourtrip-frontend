@@ -1,3 +1,5 @@
+const { starRating } = require('./utils')
+
 const header = () => {
   return `
     <nav class="blue-grey">
@@ -8,12 +10,7 @@ const header = () => {
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <a href="#">
-              <i class="tiny material-icons">favorite</i> Ratings
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="tiny material-icons">add</i> Add New
+              <i class="tiny material-icons">person</i> Welcome, User!
             </a>
           </li>
         </ul>
@@ -22,10 +19,9 @@ const header = () => {
   `
 }
 
-const card = (rating, language, cost, name ) => {
+const guide = ( image, rating, language, cost, name ) => {
   return `
-    <div class="item col s6 m6 l4">
-      <a href="./guides.html">
+    <div class="guide item col s6 m6 l3">
         <div class="card hoverable">
           <div class="ratings">
             ${ starRating(rating) }
@@ -33,13 +29,14 @@ const card = (rating, language, cost, name ) => {
           </div>
 
           <div class="card-image">
-            <img src="https://via.placeholder.com/100" alt="image">
+            <a href="./guide.html?id=${ id }">
+              <img src="${ image }" alt="image">
+            </a>
             <p class="card-title price"> ${ cost } / hour </p>
           </div>
 
           <div class="meta row">
             <span class="card-title col">${ name }</span>
-
             <span class="specialties col right">
               <i class="material-icons">directions_walk</i>
               <i class="material-icons">local_bar</i>
@@ -47,11 +44,27 @@ const card = (rating, language, cost, name ) => {
               <i class="material-icons">photo_camera</i>
             </span>
           </div>
-
         </div>
-      </a>
+    </div>`
+}
+
+const city = (city_image, name, description) => {
+  return `
+    <div class="city col s12 m4">
+    <div class="card hoverable">
+      <div class="card-image">
+        <img src="${ city_image }">
+        <h2 class="card-title">${ name }</h2>
+      </div>
+      <div class="card-content">
+        <p>${ description }</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
+  </div>
   `
 }
 
-module.exports = { header, card }
+module.exports = { header, guide, city }

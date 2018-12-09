@@ -8,26 +8,35 @@
   <script defer src="bundle.js" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <title>Local Guides</title>
 </head>
 <body>
   <header>
     <!-- insert header -->
   </header>
 
-  <div class="city white row">
+  <div class="container city white row">
 
-    <section class="container row">
-     <i class="material-icons col">calendar</i>
-    </section>
+      <div class="city row">
+        <div class="image col s12 m4">
+          <img src="https://via.placeholder.com/350" alt="image">
+        </div>
+        <div class="description col s12 m8">
+          <h4>${ city_name }</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quia, magnam necessitatibus commodi praesentium ducimus eos
+            repellat eius dolores ipsum labore et veritatis expedita
+            porro tenetur, explicabo officiis id ad dignissimos?
+          </p>
+        </div>
+      </div>
 
-    <section class="tour-guides container">
-      <h3 class="center-align">${ city_guides }</h3>
+      <h4 class="center-align">Local Guides</h4>
+      <p class="center-align">Some clever blurb here</p>
 
-      <div class="cards row">
-
-        <div class="item col s6 m6 l4">
-          <a href="./?=${ id }">
+      <div class="guides cards row">
+        <div class="guide item col s12 m6 l3">
             <div class="card hoverable">
               <div class="ratings">
                 <i class="material-icons">star</i>
@@ -40,13 +49,13 @@
               </div>
 
               <div class="card-image">
-                <img src="https://via.placeholder.com/100" alt="image">
+                <a href="./guide.html?id=${ id }">
+                  <img src="https://via.placeholder.com/100" alt="image">
+                </a>
                 <p class="card-title price"> 0.00 / tour </p>
               </div>
-
               <div class="meta row">
                 <span class="card-title col">${ name }</span>
-
                 <span class="specialties col right">
                   <i class="material-icons">directions_walk</i>
                   <i class="material-icons">local_bar</i>
@@ -54,22 +63,105 @@
                   <i class="material-icons">photo_camera</i>
                 </span>
               </div>
-
             </div>
-          </a>
+        </div>
+
+        <div class="guide item col s12 m6 l3">
+          <div class="card hoverable">
+            <div class="ratings">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <div> Speaks Japanese and English </div>
+            </div>
+
+            <div class="card-image">
+              <a href="./guide.html?id=${ id }">
+                <img src="https://via.placeholder.com/100" alt="image">
+              </a>
+              <p class="card-title price"> 0.00 / tour </p>
+            </div>
+            <div class="meta row">
+              <span class="card-title col">${ name }</span>
+              <span class="specialties col right">
+                <i class="material-icons">directions_walk</i>
+                <i class="material-icons">local_bar</i>
+                <i class="material-icons">local_dining</i>
+                <i class="material-icons">photo_camera</i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide item col s12 m6 l3">
+          <div class="card hoverable">
+            <div class="ratings">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <div> Speaks Japanese and English </div>
+            </div>
+
+            <div class="card-image">
+              <a href="./guide.html?id=${ id }">
+                <img src="https://via.placeholder.com/100" alt="image">
+              </a>
+              <p class="card-title price"> 0.00 / tour </p>
+            </div>
+            <div class="meta row">
+              <span class="card-title col">${ name }</span>
+              <span class="specialties col right">
+                <i class="material-icons">directions_walk</i>
+                <i class="material-icons">local_bar</i>
+                <i class="material-icons">local_dining</i>
+                <i class="material-icons">photo_camera</i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide item col s12 m6 l3">
+          <div class="card hoverable">
+            <div class="ratings">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <div> Speaks Japanese and English </div>
+            </div>
+
+            <div class="card-image">
+              <a href="./guide.html?id=${ id }">
+                <img src="https://via.placeholder.com/100" alt="image">
+              </a>
+              <p class="card-title price"> 0.00 / tour </p>
+            </div>
+            <div class="meta row">
+              <span class="card-title col">${ name }</span>
+              <span class="specialties col right">
+                <i class="material-icons">directions_walk</i>
+                <i class="material-icons">local_bar</i>
+                <i class="material-icons">local_dining</i>
+                <i class="material-icons">photo_camera</i>
+              </span>
+            </div>
+          </div>
         </div>
 
       </div>
 
-    </section>
-
   </div>
   <footer class="blue-grey darken-4 page-footer">
-    <!-- insert footer -->
-    <div class="container footer-copyright">
-      <p>
-        <strong>&copy; 2018 Discover Network</strong>
-      </p>
+    <div class="container center-align footer-copyright">
+        <strong>Copyright &copy; 2018 Diners Club International Ltd</strong>
     </div>
   </footer>
 
