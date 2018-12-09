@@ -54,7 +54,7 @@ const city = (city_image, name, description) => {
     <div class="card hoverable">
       <div class="card-image">
         <img src="${ city_image }">
-        <h2 class="card-title">${ name }</h2>
+        <h2 class="card-title city">${ name }</h2>
       </div>
       <div class="card-content">
         <p>${ description }</p>
