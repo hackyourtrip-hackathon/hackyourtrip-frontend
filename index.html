@@ -34,12 +34,28 @@
     </nav>
   </header>
 
-  <div class="reviews white row">
+  <div class="city white row">
 
-    <section class="container">
+    <section class="city-details container row">
+      <div class="image col m12 l4">
+        <img src="https://via.placeholder.com/350" alt="">
+      </div>
+
+      <div class="image col m12 l8">
+        <h2>City Name</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Labore ea cupiditate possimus optio ducimus magni repudiandae!
+          Iste cumque, voluptas explicabo accusantium alias dolorem illo
+          molestiae tempora doloremque aut magnam dignissimos.
+        </p>
+      </div>
+    </section>
+
+    <section class="tour-guides container">
       <h3>Another Headline</h3>
 
-      <div class="tour-guides cards row">
+      <div class="cards row">
 
         <div class="item col s12 m6 l3">
 
@@ -51,7 +67,7 @@
 
             <div class="card-content">
               <span class="card-title activator">${ starRating(rating) }</span>
-              <p>${ review.slice(0, 100) }...</p>
+              <p> ***** </p>
             </div>
 
           </div>
@@ -59,6 +75,7 @@
         </div>
 
       </div>
+
     </section>
 
   </div>
