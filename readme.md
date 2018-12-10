@@ -24,7 +24,3 @@ To use this app:
 * Discover's City Guides API
 * Frontend : HTML / CSS / SASS / JavaScript / Materialize
 * Backend : Node.js / Express
-
-### Walkthrough of user experience
-
-![Example](./Hackathon_ScreenR.mov)
