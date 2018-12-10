@@ -7,7 +7,6 @@ When you are travelling to a new place, what do you seek out? A unique, local ex
 * Curated local experience
 * Guides who are knowledgable of Discover deals and promotions
 * Guides who speak mutiple languages
-* Curated local experience
 
 ### Intructions
 
